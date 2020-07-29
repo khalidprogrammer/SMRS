@@ -362,7 +362,39 @@ public function change_password()
     }
 }
 
+	function NumMaleFemaleData(){
+          
+        $row = $this->ReportModel->sum_data_charts();
+      
 
+        if(!empty($row->TotalMale) || !empty($row->TotalFemale) || !empty($row->TotalChild) || !empty($row->TotalDeath))
+        {
+            $totalnum = [
+            	[$this->lang->line('Male'), (int) $row->TotalMale],
+                [$this->lang->line('Female'), (int) $row->TotalFemale],
+                [$this->lang->line('Child'),(int) $row->TotalChild],
+                [$this->lang->line('Naturalmartyr'),(int) $row->TotalDeath],
+                [$this->lang->line('Naturalinjured'),(int) $row->TotalInjured],
+                [$this->lang->line('Totaldamage'),(int) $row->TotalDamage],
+                [$this->lang->line('Office'),(int) $row->TotalOffice],
+                [$this->lang->line('Mosques'),(int) $row->TotalMosques],
+                [$this->lang->line('Bridge'),(int) $row->TotalBridge],
+                [$this->lang->line('Road'),(int) $row->TotalRoad],
+                [$this->lang->line('Livestock'),(int) $row->TotalLivestock],
+            ];
+          
+
+           
+        } else { $totalnum[] = ''; }
+
+       
+
+        echo json_encode($totalnum);
+       
+
+
+    }
+      
 
     
     }
