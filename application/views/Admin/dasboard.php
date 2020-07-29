@@ -10,11 +10,11 @@ $method = $this->router->fetch_method();
           <section class="wrapper site-min-height">
               <!-- page start-->
               <div class="row state-overview">
-                  <div class="col-lg-2 col-sm-6">
+              <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol terques">
                               <!-- <i class="fa fa-user"></i> -->
-                              <img src="<?=base_url()?>assets_rtl/img/natural_maytr.png" alt="" >
+                              <img src="<?=base_url()?>assets_rtl/img/icons/dead.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class="count"><?php echo $natural_mytr[0]->Naturalmartyr?></h1>
@@ -22,21 +22,11 @@ $method = $this->router->fetch_method();
                           </div>
                       </section>
                   </div>
-                  <div class="col-lg-2 col-sm-6">
-                      <section class="panel">
-                          <div class="symbol red">
-                          <img src="<?=base_url()?>assets_rtl/img/unnatural_maytr.png" alt="" >
-                          </div>
-                          <div class="value ">
-                              <h1 class=" count2 text-danger"><?=$unatural[0]->Unnatural?></h1>
-                              <p><?=$this->lang->line('Unnatural')?></p>
-                          </div>
-                      </section>
-                  </div>
+
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol yellow">
-                          <img src="<?=base_url()?>assets_rtl/img/natural_injured.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/injured.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count3 "><?=$natural_injured[0]->Naturalinjured?></h1>
@@ -44,23 +34,11 @@ $method = $this->router->fetch_method();
                           </div>
                       </section>
                   </div>
+
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/unnatural_maytr.png" alt="" >
-                          </div>
-                          <div class="value">
-                              <h1 class=" count4 text-danger" >
-                              <?=$unnatural_injured[0]->Unnaturalinjured?>
-                                </h1>
-                              <p class="text-danger"><?=$this->lang->line('Unnaturalinjured')?></p>
-                          </div>
-                      </section>
-                  </div>
-                  <div class="col-lg-2 col-sm-6">
-                      <section class="panel">
-                          <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/unnatural_maytr.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/maale.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4">
@@ -70,10 +48,11 @@ $method = $this->router->fetch_method();
                           </div>
                       </section>
                   </div>
+
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/unnatural_maytr.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/female.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$Female[0]->Female?></h1>
@@ -81,14 +60,12 @@ $method = $this->router->fetch_method();
                           </div>
                       </section>
                   </div>
-                  
-              </div>
 
-              <div class="row state-overview">
-              <div class="col-lg-2 col-sm-6">
+
+                  <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/unnatural_maytr.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/children.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$Child[0]->Child?></h1>
@@ -100,7 +77,7 @@ $method = $this->router->fetch_method();
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/totaldamage.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/house_destroyed.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$totaldamage[0]->Totaldamage?></h1>
@@ -108,10 +85,14 @@ $method = $this->router->fetch_method();
                           </div>
                       </section>
                   </div>
-                  <div class="col-lg-2 col-sm-6">
+
+              </div>
+
+              <div class="row state-overview">
+              <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/partialdamage.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/partial.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$partialdamage[0]->Partialdamage?></h1>
@@ -123,7 +104,7 @@ $method = $this->router->fetch_method();
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/school.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/office.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$office[0]->Office?></h1>
@@ -131,10 +112,11 @@ $method = $this->router->fetch_method();
                           </div>
                       </section>
                   </div>
+
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/mosques.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/mosque.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$mosques[0]->Mosques?></h1>
@@ -142,11 +124,10 @@ $method = $this->router->fetch_method();
                           </div>
                       </section>
                   </div>
-                  
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/bridge.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/bridge.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$bridge[0]->Bridge?></h1>
@@ -158,7 +139,7 @@ $method = $this->router->fetch_method();
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/road.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/road.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$road[0]->Road?></h1>
@@ -167,10 +148,11 @@ $method = $this->router->fetch_method();
                       </section>
                   </div>
 
+                  
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/agricultureland.png" alt="" > 
+                          <img src="<?=base_url()?>assets_rtl/img/icons/Agriculture.png" alt="" > 
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$agriculturalland[0]->Agriculturalland?></h1>
@@ -179,10 +161,11 @@ $method = $this->router->fetch_method();
                       </section>
                   </div>
 
+                  
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/livestock.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/livestock.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$livestock[0]->Livestock?></h1>
@@ -191,6 +174,7 @@ $method = $this->router->fetch_method();
                       </section>
                   </div>
 
+                  
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
@@ -205,7 +189,7 @@ $method = $this->router->fetch_method();
                   <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/unnatural_maytr.png" alt="" >
+                          <img src="<?=base_url()?>assets_rtl/img/icons/displaced.png" alt="" >
                           </div>
                           <div class="value">
                               <h1 class=" count4"><?=$displaced[0]->Displaced?></h1>
@@ -213,21 +197,33 @@ $method = $this->router->fetch_method();
                           </div>
                       </section>
                   </div>
-                  <div class="col-lg-2 col-sm-6">
-                      <section class="panel">
-                          <div class="symbol blue">
-                          <img src="<?=base_url()?>assets_rtl/img/agricultureland.png" alt="" > 
-                          </div>
-                          <div class="value">
-                              <h1 class=" count4"><?=$trees[0]->Trees?></h1>
-                              <p><?=$this->lang->line('Trees')?></p>
-                          </div>
-                      </section>
-                  </div>
               </div>
+              <div class="row state-overview">
+              <div class="col-sm-6">
               
-             
+              <div id="NumMFChart" dir="ltr" style="width: 650px;"></div>
               
+              </div>
+
+              <div class="col-sm-6">
+                
+                <section class="panel">
+
+                <header class="panel-heading">
+             <?= $this->lang->line('table_title');?>
+              <span class="tools pull-right">
+                <a href="javascript:;" class="fa fa-chevron-down"></a>
+                <a href="javascript:;" class="fa fa-times"></a>
+              </span>
+            
+            </header>
+                
+                </section>
+              
+              
+              </div>
+              </div>
+                                    
           </section>
       </section>
     <!--main content end-->
@@ -269,4 +265,71 @@ $method = $this->router->fetch_method();
     padding: 0;
     color: #f38426;
 }
+img{
+    width:40px !important;
+}
 </style>
+
+<!-- Charts JS -->
+
+
+<script>
+                var MaleFemale;
+
+                TotalMF = "total";               
+                    $.ajax({
+
+                    url:"<?=site_url('Admin/NumMaleFemaleData')?>",
+                    type: "POST",
+                    success:function(response){
+
+                    var data = JSON.parse(response);
+                
+                    if(data != ""){
+                     MaleFemale = "";
+                    NumMaleFemaleData(data)
+                    FillNumMFTable(data)
+                    }
+                    }
+
+
+                    })
+
+
+
+        function FillNumMFTable(data)
+        {
+            $("#NumMF tbody").empty();
+            var i, currentElem;
+
+            tblRow = "<tr>";
+
+            for( i = 0; i < data.length; i++) {
+                currentElem = data[i];
+                tblRow += "<td>" + currentElem[1] + "</td>"
+            }
+
+            tblRow +="</tr>";
+
+            $(tblRow).appendTo("#NumMF tbody");
+        }
+
+
+
+
+</script>
+
+
+<!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script> 
+
+
+<script src="<?=base_url()?>assets_rtl/highcharts/highcharts.js" type="text/javascript"></script>
+<script src="<?=base_url()?>assets_rtl/highcharts/highcharts-3d.js" type="text/javascript"></script>  
+<script src="<?=base_url()?>assets_rtl/jquery.serializejson.js" type="text/javascript"></script>
+<script src="<?=base_url()?>assets_rtl/highcharts/exporting.js" type="text/javascript"></script> 
+
+<script src="<?=base_url()?>assets_rtl/numberofmalefemale.js" type="text/javascript"></script>
+

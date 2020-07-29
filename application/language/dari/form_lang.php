@@ -33,7 +33,7 @@
 
     $lang['Unnatural']="غیرطبیعی";
 
-    $lang['Naturalinjured']="زخمی طبیعی";
+    $lang['Naturalinjured']="زخمی";
 
     $lang ['Unnaturalinjured'] = "غیر زخمی طبیعی";
 
@@ -57,8 +57,8 @@
     $lang['Agriculturalland']="زمین زراعتی/جریب";
     $lang['Bridge']="پل";
     $lang['Road']="سرک(KM)";
-    $lang['Regressive']="بیجاشده";
-    $lang['Displaced']="برگشت کننده";
+    $lang['Regressive']="برگشت کننده";
+    $lang['Displaced']="بیجاشده";
     $lang['Info']="ملاحظات";
 
     // Modal TItle

@@ -150,8 +150,22 @@ class ReportModel extends CI_Model {
 	return $query->result();
 	
 
-
 	}
+
+
+	function sum_data_charts(){
+		
+		$sql ="SELECT SUM(Male) as TotalMale , SUM(Female) as TotalFemale, SUM(Child) as TotalChild, SUM(Naturalmartyr) as TotalDeath,
+		SUM(Naturalinjured) as TotalInjured, SUM(Totaldamage) as TotalDamage,SUM(Office) as TotalOffice, SUM(Mosques) as TotalMosques,
+		SUM(Bridge) as TotalBridge, SUM(Road) as TotalRoad, SUM(Livestock) as TotalLivestock
+	    FROM incident";
+
+		$query= $this->db->query($sql);
+		// echo $this->db->last_query();die;
+		return $query->row();
+	}
+
+
 
 
 	
