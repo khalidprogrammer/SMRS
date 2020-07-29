@@ -217,6 +217,33 @@ $method = $this->router->fetch_method();
               </span>
             
             </header>
+            <div class="table-scrollable">
+                    <table id= "NumMF" class="table table-striped table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <!-- <td colspan="2"><?=lang('MaleFemale')?></td> -->
+                            </tr>
+                            <tr>
+                                <td><?=$this->lang->line('Naturalmartyr')?></td>
+                                <td><?=$this->lang->line('Naturalinjured')?></td>
+                                <td><?=$this->lang->line('Male')?></td>
+                                <td><?=$this->lang->line('Female')?></td>
+                                <td><?=$this->lang->line('Child')?></td>
+                                <td><?=$this->lang->line('Totaldamage')?></td>
+                                <td><?=$this->lang->line('Office')?></td>
+                                <td><?=$this->lang->line('Mosques')?></td>
+                                <td><?=$this->lang->line('Bridge')?></td>
+                                <td><?=$this->lang->line('Road')?></td>
+                                <td><?=$this->lang->line('Livestock')?></td>
+                              
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                        </tbody>
+                    </table>
+                </div> 
                 
                 </section>
               
