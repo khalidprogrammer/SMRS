@@ -11,6 +11,7 @@
     $lang['add_report'] = " ضافه کردن معلومات ابتداي حادثه";
 
     $lang['table_title']= " ضافه کردن معلومات ابتداي حادثه";
+    $lang['table_title_chart']= "   معلومات ابتداي  ";
 
     $lang['reset']="پاک کردن";
     $lang['search']=" جستجو";

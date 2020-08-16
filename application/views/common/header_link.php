@@ -9,7 +9,7 @@
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="img/favicon.html">
   
-    <title>Horizontal Menu</title>
+    <title><?=$this->lang->line('logo_title')?></title>
     <!-- Datatables -->
 <script src="<?=base_url()?>assets_rtl/js/jquery.js"></script>  
 

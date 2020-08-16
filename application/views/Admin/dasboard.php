@@ -10,6 +10,7 @@ $method = $this->router->fetch_method();
           <section class="wrapper site-min-height">
               <!-- page start-->
               <div class="row state-overview">
+              
               <div class="col-lg-2 col-sm-6">
                       <section class="panel">
                           <div class="symbol terques">
@@ -210,7 +211,7 @@ $method = $this->router->fetch_method();
                 <section class="panel">
 
                 <header class="panel-heading">
-             <?= $this->lang->line('table_title');?>
+             <?= $this->lang->line('table_title_chart');?>
               <span class="tools pull-right">
                 <a href="javascript:;" class="fa fa-chevron-down"></a>
                 <a href="javascript:;" class="fa fa-times"></a>
@@ -234,9 +235,8 @@ $method = $this->router->fetch_method();
                                 <td><?=$this->lang->line('Mosques')?></td>
                                 <td><?=$this->lang->line('Bridge')?></td>
                                 <td><?=$this->lang->line('Road')?></td>
-                                <td><?=$this->lang->line('Livestock')?></td>
-                              
-                               
+                                <td><?=$this->lang->line('Livestock')?></td>                               
+                                <td><?=$this->lang->line('Agriculturalland')?></td>                               
                             </tr>
                         </thead>
                         <tbody>
@@ -349,8 +349,8 @@ img{
 
 <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script> 
+<!-- <script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>  -->
 
 
 <script src="<?=base_url()?>assets_rtl/highcharts/highcharts.js" type="text/javascript"></script>

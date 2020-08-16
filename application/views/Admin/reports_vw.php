@@ -19,10 +19,12 @@
         <!--  Search Start -->
             <div class="container pt">
             <div class="row">
-              <form  id="filterForm" method="post" action="" onsubmit="return filterSubmit();">
+             
+              
+            <form  id="filterForm" method="post" action="" onsubmit="return filterSubmit();">
              <div class="col-sm-3">
              <label for=""><?=$this->lang->line('date')?></label>
-             <input  type="text" class="form-control example1" name="date" id="search_date">
+             <input type="text" class="form-control example1"   name="date" id="search_date">
              </div>
              <!--  Search by province -->
              <div class="col-sm-3">
@@ -73,7 +75,7 @@
                  <?=$this->lang->line('modal_title')?>
                 </h4>
                 </div>
-
+                <h3>اقدامات انجام شده</h3>
                 <form action="<?=site_url('Admin/add_report')?>"  role="form" method="post" enctype="multipart/form-data" id = "userForm">
                   <div class="modal-body">
                   <input type="hidden" name="Id" id="Id">
@@ -112,10 +114,19 @@
                             <label for=""><?=$this->lang->line('kinds_disaster');?></label>
                             <select name="Kinds_Disaster" id="Kinds_Disaster" class="form-control">
                               <option value >--<?=$this->lang->line('select_title');?></option>
-                              <option value="سیلاب">سیلاب</option>
-                              <option value=" باران های سنگین"> باران های سنگین</option>
+                              <option value="سیلاب دریایی">سیلاب دریایی</option>
+                              <option value=" باران های شدید"> بارندگی شدید </option>
                               <option value="لغزش زمین">لغزش زمین</option>
                               <option value="سرما شدید">سرما شدید</option>
+                              <option value="زلزله "> زلزله</option>
+                              <option value="برفباری "> برفباری</option>
+                              <option value="برفکوچ ">برفکوچ </option>
+                              <option value="لغزش کوه "> لغزش کوه</option>
+                              <option value="سیلاب آنی">سیلاب آنی</option>
+                              <option value="رعد و برق">رعد و برق</option>
+                              <option value="طوفان شدید">طوفان شدید</option>
+                              
+
                             </select>
                           </div>
                         </div>
@@ -771,6 +782,7 @@ $('body').on('click','.k-grid-هذف',function(){
   
     $(".example1").pDatepicker({
       format: 'YYYY/MM/DD',
+      initialValue: false
     });
   });
 

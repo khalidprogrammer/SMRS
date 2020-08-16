@@ -20,6 +20,7 @@
             {
             // redirect them to the login page
             redirect('auth/login', 'refresh');
+            
             }
               
           }
@@ -234,12 +235,7 @@
 
   
   $list=$this->ReportModel->excel_report($take,$skip,$province,$distric,$kinds_disaster,$date);
-  
- 
-            
-            
-            
-            
+           
 //   $report_data = $this->ReportModel->all_report();
  
   $excel_row = 2;
@@ -266,7 +262,7 @@
    $object->getActiveSheet()->setCellValueByColumnAndRow(13, $excel_row, $row->Partialdamage);
    $object->getActiveSheet()->setCellValueByColumnAndRow(14, $excel_row, $row->Mosques);
    $object->getActiveSheet()->setCellValueByColumnAndRow(15, $excel_row, $row->Office);
-   $object->getActiveSheet()->setCellValueByColumnAndRow(16, $excel_row, $row->Tress);
+   $object->getActiveSheet()->setCellValueByColumnAndRow(16, $excel_row, $row->Trees);
    $object->getActiveSheet()->setCellValueByColumnAndRow(17, $excel_row, $row->Livestock);
    $object->getActiveSheet()->setCellValueByColumnAndRow(18, $excel_row, $row->Agriculturalland);
    $object->getActiveSheet()->setCellValueByColumnAndRow(19, $excel_row, $row->Bridge);
@@ -381,6 +377,8 @@ public function change_password()
                 [$this->lang->line('Bridge'),(int) $row->TotalBridge],
                 [$this->lang->line('Road'),(int) $row->TotalRoad],
                 [$this->lang->line('Livestock'),(int) $row->TotalLivestock],
+                [$this->lang->line('Agriculturalland'),(int) $row->TotalAgriculture],
+               
             ];
           
 
