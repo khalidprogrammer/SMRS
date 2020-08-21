@@ -6,6 +6,19 @@
 
     $lang['dashboard']="دشبورد"; 
 
+    $lang['add_maps']='نقشه ها را اضافه کنید ';
+
+	$lang['natural_disaster']= 'حوادث طبعی';
+	
+	$lang['search_map']='جستجو نقشه های';
+
+	$lang['type_search']='جستجو نوع';
+
+	$lang['year']='سال';
+	$lang['month']='ماه';
+	$lang['week']='هفته';
+	$lang['quater']='ربع';
+
     $lang['new_report'] =" معلومات ابتدایی حادثه ";
 
     $lang['add_report'] = " ضافه کردن معلومات ابتداي حادثه";

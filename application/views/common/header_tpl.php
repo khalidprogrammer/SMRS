@@ -25,6 +25,8 @@
                             
                         </ul>
                     </li>
+                    <li><a href="<?=base_url()?>Admin/add_maps"><?=$this->lang->line('add_maps')?></a></li>
+                    <li><a href="<?=base_url()?>Admin/natural_disaster"><?=$this->lang->line('natural_disaster')?></a></li>
                 </ul>
 
             </div>

@@ -361,16 +361,20 @@ public function change_password()
 	function NumMaleFemaleData(){
           
         $row = $this->ReportModel->sum_data_charts();
+
+        // print_r($row);die;
       
 
         if(!empty($row->TotalMale) || !empty($row->TotalFemale) || !empty($row->TotalChild) || !empty($row->TotalDeath))
         {
             $totalnum = [
+              [$this->lang->line('Naturalmartyr'),(int) $row->TotalDeath],
+              [$this->lang->line('Naturalinjured'),(int) $row->TotalInjured],
             	[$this->lang->line('Male'), (int) $row->TotalMale],
-                [$this->lang->line('Female'), (int) $row->TotalFemale],
-                [$this->lang->line('Child'),(int) $row->TotalChild],
-                [$this->lang->line('Naturalmartyr'),(int) $row->TotalDeath],
-                [$this->lang->line('Naturalinjured'),(int) $row->TotalInjured],
+              [$this->lang->line('Female'), (int) $row->TotalFemale],
+              [$this->lang->line('Child'),(int) $row->TotalChild],
+                
+               
                 [$this->lang->line('Totaldamage'),(int) $row->TotalDamage],
                 [$this->lang->line('Office'),(int) $row->TotalOffice],
                 [$this->lang->line('Mosques'),(int) $row->TotalMosques],
@@ -392,13 +396,45 @@ public function change_password()
 
 
     }
-      
 
-    
+
+
+    //  Add Maps 
+
+
+    function add_maps(){      
+
+        $data['page']='Admin/maps_vw';
+
+        $this->load->view('common/template',$data);
     }
+
+
+    // Details Maps
+
+    function detail_map(){
+
+       $data['page']='Admin/detail_map_vw';
+
+        $this->load->view('common/template',$data);
+
+	}
+	
+	// Natural Disaster From ocha
+
+	function natural_disaster(){
+
+		$data['page']='Admin/natural_disaster_vw';
+
+        $this->load->view('common/template',$data);
+	}
+
+
+
     
     /* End of file Admin.php */
     /* Location: ./application/controllers/Admin.php */
+    }
 
 
 
